@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fix And Buy - Accesorios de celulares</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<h1>Fix And <span>Buy</span></h1>
+				</div>
+				<ul class="nav__list">
+					
+					<div class="carrito__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
+      </div>
+    </nav>
+
+    <section class="filter">
+      <div class="grid">
+        <div class="div">
+          <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+          <input type="text" id="buscar" placeholder="Buscar...">
+        </div>
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">Categoria</option>
+            <option value="Fundas">Fundas</option>
+            <option value="Parlantes">Parlantes</option>
+            <option value="Auriculares">Auriculares</option>
+            <option value="Accesorios">Accesorios</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="productos">
+      <div class="productos__center">
+        <!-- <div class="producto">
+          <div class="image__container">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_737426-MLA51668464890_092022-O.webp" alt="">
+          </div>
+          <div class="producto__footer">
+            <h1>FIX AND BUY</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$5.000</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+
+          <!-- <div class="carrito__item">
+
+            <img src="https://http2.mlstatic.com/D_NQ_NP_737426-MLA51668464890_092022-O.webp" alt="Funda">
+            <div>
+              <h3>FIX AND BUY</h3>
+              <p class="price">$5.000</p>
+            </div>
+            <div>
+              <span>
+                <i class="bx bxs-up-arrow"></i>
+              </span>
+              <p>1</p>
+              <span>
+                <i class="bx bxs-down-arrow"></i>
+              </span>
+            </div>
+            <div>
+              <span class="remove__item">
+                <i class="bx bx-trash"></i>
+              </span>
+            </div>
+
+            
+          </div> -->
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
